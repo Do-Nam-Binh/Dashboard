@@ -46,22 +46,48 @@ body{
     display: grid;
     grid-template-columns: 50px 1fr;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
-i{
-    justify-self: end;
+.sidebar > div i{
+    justify-self: center;
 }
 .sidebar-logo>div>i{
     font-size: 25px;
+
 }
 
 .header{
     grid-area: 1 / 2/ 1 / 2 ;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    box-shadow: 0 5px 5px -5px black;
+    background-color: white;
+    overflow: visible;
+}
+
+.header-1{
+    display: grid;
+    grid-template-columns: min-content 1fr min-content min-content 200px;
+    grid-template-rows: 50px;
+    justify-items: center;
+    align-items: center;
+    gap: 50px
+}
+
+.header-1 > .search{
+    width: 70%;
+}
+
+
+.profile-pic > img{
+    border-radius: 50%;
+    width: 30px;
 }
 
 .main-body{
     grid-area: 2 / 2 / 2 / 2;
+    background-color: lightgrey;
 }
 
 .card{
