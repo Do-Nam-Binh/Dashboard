@@ -68,15 +68,33 @@ body{
 
 .header-1{
     display: grid;
-    grid-template-columns: min-content 1fr min-content min-content 200px;
-    grid-template-rows: 50px;
-    justify-items: center;
-    align-items: center;
-    gap: 50px
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50px;   
 }
 
-.header-1 > .search{
-    width: 70%;
+.header-1 .left{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    margin-left: 60px;
+    gap: 18px;
+    align-items: center;
+}
+
+.header-1 .right{
+    display: grid;
+    grid-template-columns: 30px 30px 1fr;
+    margin-left: 60px;
+    gap: 18px;
+    align-items: center;
+    justify-self: end;
+    margin-right: 60px;
+}
+
+.header-1 > .left >.search{
+    height: 25px;
+    border-radius: 15px;
+    border-style: none;
+    background-color: rgba(231, 226, 226, 0.918);
 }
 
 
