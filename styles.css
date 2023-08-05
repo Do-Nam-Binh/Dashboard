@@ -58,6 +58,7 @@ body{
 }
 
 .header{
+    height: 180px;
     grid-area: 1 / 2/ 1 / 2 ;
     display: grid;
     grid-template-rows: min-content 1fr;
@@ -70,6 +71,8 @@ body{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 50px;   
+    font-weight: 800;
+    font-size: 14px;
 }
 
 .header-1 .left{
@@ -97,6 +100,52 @@ body{
     background-color: rgba(231, 226, 226, 0.918);
 }
 
+.header-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: -2;
+}
+
+.header-2 .left .profile-pic-big img{
+    border-radius: 50%;
+    width: 60px;
+}
+
+.header-2 .left{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    margin-left: 60px;
+    gap: 18px;
+    align-items: center;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.name-big > div {
+    font-size: 18px;
+}
+
+
+
+.header-2 .right{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    margin-left: 60px;
+    gap: 50px;
+    align-items: center;
+    justify-self: end;
+    margin-right: 60px;
+}
+
+.header-2 .right button{
+    padding: 8px;
+    background-color: rgb(13, 178, 255);
+    border-radius: 15px;
+    border-style: none;
+    color: white;
+    font-weight: 800;
+}
 
 .profile-pic > img{
     border-radius: 50%;
