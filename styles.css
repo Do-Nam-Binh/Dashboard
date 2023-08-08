@@ -12,6 +12,8 @@ body{
 }
 
 .sidebar{
+    padding-top: 10px;
+    padding-left: 5px;
     grid-area: 1 / 1 / span 2 / 2 ;
     display: grid;
     background-color: rgb(13, 178, 255);
@@ -49,9 +51,18 @@ body{
     gap: 10px;
 }
 
-.sidebar > div i{
+.sidebar > div img{
     justify-self: center;
+    width: 25px;
+    filter: invert();
 }
+
+.sidebar > div:first-child img{
+    justify-self: center;
+    width: 40px;
+    filter: invert();
+}
+
 .sidebar-logo>div>i{
     font-size: 25px;
 
@@ -75,6 +86,11 @@ body{
     font-size: 14px;
 }
 
+label, label img{
+    width: 25px;
+    margin-top: 2px;
+}
+
 .header-1 .left{
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -92,6 +108,20 @@ body{
     justify-self: end;
     margin-right: 60px;
 }
+
+.bell-icon img{
+    width: 25px ;
+}
+
+.profile-pic > img{
+    border-radius: 50%;
+    width: 35px;
+}
+
+.name{
+    font-size: 16px;
+}
+
 
 .header-1 > .left >.search{
     height: 25px;
@@ -148,10 +178,6 @@ body{
     font-weight: 800;
 }
 
-.profile-pic > img{
-    border-radius: 50%;
-    width: 30px;
-}
 
 .main-body{
     grid-area: 2 / 2 / 2 / 2;
